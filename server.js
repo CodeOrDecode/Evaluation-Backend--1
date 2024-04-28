@@ -4,12 +4,12 @@ const cors = require("cors");
 const server = express();
 const connection = require("./config/connection");
 const userRouter = require("./routes/userRouter");
-const noteRouter = require("./routes/noteRouter")
+const bookRouter = require("./routes/bookRouter")
 
 server.use(cors());
 server.use(express.json());
 server.use("/user", userRouter);
-server.use("/note", noteRouter);
+server.use("/book", bookRouter);
 
 
 
